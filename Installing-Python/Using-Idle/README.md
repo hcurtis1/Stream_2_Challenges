@@ -1,0 +1,1 @@
+# Don't use IDLE as its a pain in the arse and Useless. Use Pycharm if you know what's good for you!!
