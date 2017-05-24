@@ -53,13 +53,15 @@ def get_dictionary(words):
     with open(words) as f:
         return [w.strip().upper() for w in f]
 
+def display_words(words):
+    for word in words:
+        print word
+    print "Found {0} words".format(len(words))
 
 def main():
     grid = make_grid(3, 3)
     dictionary = get_dictionary('/usr/share/dict/words')
     words = search(grid, dictionary)
-    for word in words:
-        print word
-    print "Found {0} words".format(len(words))
+    display_words(words)
 
 main()
