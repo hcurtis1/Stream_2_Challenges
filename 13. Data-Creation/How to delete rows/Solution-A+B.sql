@@ -18,7 +18,7 @@ create table orders (
 	id integer auto_increment,
     amount decimal(18, 2),
     person_id integer,
-    created_at datetime,
+    created_at datetime default current_timestamp,
     primary key (id),
     foreign key (person_id) references people(id),
     check (amount>0)
