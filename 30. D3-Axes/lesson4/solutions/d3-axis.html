@@ -69,7 +69,7 @@ var canvasHeight = svgHeight + margin.top + margin.bottom;
 var colorScale = d3.scale.linear()
                    .domain([0, maxData])
                    .range(["blue","red"]);
-			  			
+              
 var tooltip = d3.select("body")
                  .append("div")
                  .attr("id","tooltip")
@@ -96,7 +96,7 @@ var svg = canvas.append("g")
           .attr("height",svgHeight)
           .attr("style","background-color:#ddd") /* added some style*/
           .attr("transform","translate("+ margin.left +"," + margin.bottom + ")");
-  		
+      
 svg.selectAll("rect")
    .data(myData)
    .enter()
